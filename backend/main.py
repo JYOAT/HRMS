@@ -40,10 +40,13 @@ Base = declarative_base()
 # FastAPI App
 # -----------------------------
 app = FastAPI()
-
+origins = [
+    "http://localhost:5173",              # local dev
+    FRONTEND_URL      # your deployed frontend
+]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
