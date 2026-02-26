@@ -74,3 +74,11 @@ Running the Project Locally
    npm run dev
 
 4. Open your browser and visit the URL shown in the terminal (usually http://localhost:5173)
+
+### Deployed backend link
+
+https://hrms-jq2p.onrender.com
+
+### Deployed frontend link
+
+https://hrms-proj.netlify.app/

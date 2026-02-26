@@ -42,7 +42,7 @@ Base = declarative_base()
 app = FastAPI()
 origins = [
     "http://localhost:5173",              # local dev
-    FRONTEND_URL      # your deployed frontend
+    os.getenv("FRONTEND_URL")      # your deployed frontend
 ]
 app.add_middleware(
     CORSMiddleware,
