@@ -182,7 +182,7 @@ async def mark_attendance(attendance: AttendanceCreate):
         return {"message": "Attendance recorded"}
 
 
-# ✅ FIXED VERSION (Date filter works properly)
+
 @app.get("/attendance/{employee_id}")
 async def get_attendance(
     employee_id: str,
